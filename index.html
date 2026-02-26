@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WebCraft Studio | Premium Website Agency</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#0f172a;
+  color:white;
+  overflow-x:hidden;
+  scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
+  position:fixed;
+  width:100%;
+  backdrop-filter:blur(10px);
+  background:rgba(255,255,255,0.05);
+  z-index:1000;
+}
+
+nav h2{
+  color:#38bdf8;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:30px;
+}
+
+nav ul li a{
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+  transition:0.3s;
+}
+
+nav ul li a:hover{
+  color:#38bdf8;
+}
+
+/* HERO */
+header{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:0 20px;
+  background:linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+header h1{
+  font-size:50px;
+  max-width:800px;
+  margin-bottom:20px;
+}
+
+header span{
+  color:#38bdf8;
+}
+
+header p{
+  font-size:18px;
+  margin-bottom:30px;
+  opacity:0.8;
+}
+
+.btn{
+  padding:15px 35px;
+  background:#38bdf8;
+  color:#0f172a;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 20px #38bdf8;
+}
+
+/* SECTIONS */
+section{
+  padding:100px 10%;
+  text-align:center;
+}
+
+section h2{
+  font-size:36px;
+  margin-bottom:50px;
+  color:#38bdf8;
+}
+
+/* SERVICES */
+.cards{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.card{
+  background:#1e293b;
+  padding:40px 30px;
+  border-radius:20px;
+  width:300px;
+  transition:0.4s;
+  position:relative;
+}
+
+.card:hover{
+  transform:translateY(-15px);
+  box-shadow:0 0 30px rgba(56,189,248,0.5);
+}
+
+.price{
+  font-size:24px;
+  color:#38bdf8;
+  margin-top:15px;
+  font-weight:600;
+}
+
+.popular{
+  border:2px solid #38bdf8;
+}
+
+.badge{
+  position:absolute;
+  top:-15px;
+  right:20px;
+  background:#38bdf8;
+  color:#0f172a;
+  padding:5px 15px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:600;
+}
+
+/* WHY US */
+.features{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:40px;
+}
+
+.feature{
+  width:250px;
+  padding:20px;
+}
+
+.feature h4{
+  color:#38bdf8;
+  margin-bottom:10px;
+}
+
+/* CONTACT */
+.contact{
+  background:#1e293b;
+  border-radius:20px;
+  padding:60px 20px;
+}
+
+.contact a{
+  color:#38bdf8;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* FOOTER */
+footer{
+  padding:30px;
+  background:#020617;
+  text-align:center;
+  margin-top:80px;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp{
+  position:fixed;
+  bottom:25px;
+  right:25px;
+  background:#25D366;
+  color:white;
+  padding:15px 25px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:600;
+  box-shadow:0 0 20px rgba(0,0,0,0.4);
+  transition:0.3s;
+}
+
+.whatsapp:hover{
+  transform:scale(1.1);
+}
+
+/* ANIMATION BACKGROUND CIRCLES */
+.circle{
+  position:absolute;
+  border-radius:50%;
+  background:rgba(56,189,248,0.1);
+  animation:float 6s infinite ease-in-out;
+}
+
+.circle1{
+  width:200px;
+  height:200px;
+  top:20%;
+  left:10%;
+}
+
+.circle2{
+  width:150px;
+  height:150px;
+  bottom:20%;
+  right:10%;
+}
+
+@keyframes float{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-30px);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="circle circle1"></div>
+<div class="circle circle2"></div>
+
+<nav>
+  <h2>WebCraft Studio</h2>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header>
+  <h1>We Build <span>High-Converting</span> Websites That Grow Your Business</h1>
+  <p>Modern, fast & professional websites starting from ₹2,500</p>
+  <a href="#contact" class="btn">Start Your Project</a>
+</header>
+
+<section id="services">
+  <h2>Our Pricing</h2>
+  <div class="cards">
+
+    <div class="card">
+      <h3>Business Website</h3>
+      <p>Perfect for shops, clinics & startups.</p>
+      <div class="price">₹2,500</div>
+    </div>
+
+    <div class="card popular">
+      <div class="badge">Most Popular</div>
+      <h3>Premium Website</h3>
+      <p>Modern UI + Contact Form + SEO Setup.</p>
+      <div class="price">₹4,000</div>
+    </div>
+
+    <div class="card">
+      <h3>Ecommerce</h3>
+      <p>Online store with payment integration.</p>
+      <div class="price">Starting ₹8,000</div>
+    </div>
+
+  </div>
+</section>
+
+<section id="why">
+  <h2>Why Choose Us?</h2>
+  <div class="features">
+    <div class="feature">
+      <h4>⚡ Fast Delivery</h4>
+      <p>Website live within 2–3 days.</p>
+    </div>
+    <div class="feature">
+      <h4>📱 Fully Responsive</h4>
+      <p>Perfect on mobile & desktop.</p>
+    </div>
+    <div class="feature">
+      <h4>🚀 Growth Focused</h4>
+      <p>Designed to convert visitors into clients.</p>
+    </div>
+    <div class="feature">
+      <h4>🔒 Secure & Reliable</h4>
+      <p>Free SSL & secure hosting.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact">
+    <h2>Let’s Build Your Online Presence</h2>
+    <p>📞 WhatsApp: <a href="https://wa.me/919014137101">9014137101</a></p>
+    <p>📧 Email: webcraft@email.com</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 WebCraft Studio | Designed to Impress 🚀
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919014137101">Chat on WhatsApp</a>
+
+</body>
+</html>
